@@ -15,9 +15,14 @@ public class Practica {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        System.out.println("Hola Minecraft");
-        
+
+        //crear objeto de la clase cuenta
+        Cuenta cuenta1 = new Cuenta (10000, 0);
+        cuenta1.imprimir();
+
+        System.out.println();
+        cuenta1.consignar(2501);
+        cuenta1.imprimir();
     }
     
 }
