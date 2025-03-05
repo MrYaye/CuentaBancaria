@@ -23,6 +23,10 @@ public class Practica {
         System.out.println();
         cuenta1.consignar(2501);
         cuenta1.imprimir();
+        
+        System.out.println();
+        cuenta1.retirar(15000);
+        cuenta1.imprimir();
     }
     
 }

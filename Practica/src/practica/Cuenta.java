@@ -25,11 +25,22 @@ public class Cuenta {
        System.out.println("Comision Mensual: " + comisionMensual);
 
    }
-   
    public void consignar(float cantidad){
        
        saldo = saldo + cantidad;
-   
-   
+
    }
+   public void retirar(float cantidad){
+   
+       float nuevoSaldoTemp = saldo - cantidad;
+       
+       if(nuevoSaldoTemp >= 0){
+           
+           saldo = saldo - cantidad;
+       } else {
+           
+           System.out.println("La cantidad a retirar excede el saldo actual: ");
+       }
+   }
+   
 }
